@@ -1,0 +1,71 @@
+*{
+    width: 100%;
+}
+/*--->平台介绍*/
+.main-style * {
+    box-sizing: border-box;
+}
+
+/**===============暂未开放页面样式=====================**/
+.no_data,
+.business_enter {
+    text-align: center;
+    clear: both;
+    background-color: #fafafa;
+}
+
+.no_dataImg {
+    width: 240px;
+    padding: 170px 0px 50px 0px;
+}
+
+.no_dataText {
+    text-align: center;
+    padding: 0px 0px 90px 0px;
+    color: #bebebe;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav_bottomLine {
+    border-bottom: 2px solid #ff6600;
+}
+/*底部样式*/
+.diu {
+    clear: both;
+    padding: 50% 100px;
+}
+
+#fooi {
+    position: relative;
+    z-index: 1;
+    border-top: solid 1px #dfdfdf;
+    padding: 1em 0em 2em 0em;
+    margin: 1em 2em 0em 2em;
+    text-align: center;
+}
+#ia{
+    color: #FFFFFF;
+}
+a{
+    text-decoration: none;
+}
+#qqi{
+    color: #000000;
+}
+#iao{
+    border-radius:15px;
+    background: #5DB0FF; 
+    border: 2px solid #5DB0FF;
+}
+#iao:link{
+    border-radius:15px;
+    background: #5DB0FF; 
+    border: 2px solid #5DB0FF;
+}
+#iao:hover{
+    border-radius:50px;
+    background: #5DB0FF; 
+    border: 5px solid #5DB0FF;
+    box-shadow: 0px 25px 10px #888888;
+}
