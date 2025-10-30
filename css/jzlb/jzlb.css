@@ -1,0 +1,280 @@
+/* 添加滚动功能 */
+html,
+body {
+    height: 100%;
+    overflow: hidden;
+    /* 防止html元素产生滚动条 */
+}
+
+body {
+    min-height: 100vh;
+    /* 确保body高度至少为视口高度 */
+    overflow-y: auto;
+    /* 添加垂直滚动条 */
+    -webkit-overflow-scrolling: touch;
+    /* 启用iOS设备的平滑滚动 */
+}
+
+/* 原有样式保持不变 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* 顶部导航栏 */
+.top-bar {
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.back-button {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #4a6cf7;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.back-button:hover {
+    color: #2a4de4;
+    transform: translateX(-3px);
+}
+
+.back-button i {
+    margin-right: 8px;
+    font-size: 18px;
+}
+
+.page-title {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+    color: #1a1a1a;
+    flex-grow: 5;
+    margin-right: 40px;
+}
+
+/* 感谢区域 */
+.thanks-section {
+    background: linear-gradient(135deg, #f0f4ff, #e6f7ff);
+    border-radius: 16px;
+    padding: 30px;
+    margin: 30px auto;
+    max-width: 800px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.thanks-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #1a73e8;
+    margin-bottom: 15px;
+}
+
+.thanks-text {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.8;
+}
+
+/* 赞助列表容器 */
+.sponsors-container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.stats-bar {
+    background: white;
+    border-radius: 12px;
+    padding: 15px 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stats-item {
+    text-align: center;
+    flex: 1;
+}
+
+.stats-value {
+    font-size: 24px;
+    font-weight: 700;
+    color: #4a6cf7;
+}
+
+.stats-label {
+    font-size: 14px;
+    color: #666;
+    margin-top: 5px;
+}
+
+/* 赞助卡片布局 */
+.sponsors-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.sponsor-card {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sponsor-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.12);
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    border-bottom: 1px solid #eee;
+}
+
+.avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid white;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sponsor-info {
+    margin-left: 15px;
+}
+
+.sponsor-name {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+.sponsor-amount {
+    font-size: 24px;
+    font-weight: 700;
+    color: #ff6b6b;
+    margin-top: 5px;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+}
+
+.contact-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: #f0f4ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 12px;
+    color: #4a6cf7;
+}
+
+.contact-value {
+    font-size: 16px;
+    color: #555;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .sponsors-grid {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    }
+
+    .stats-bar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .page-title {
+        font-size: 20px;
+        margin-right: 30px;
+    }
+
+    .thanks-title {
+        font-size: 28px;
+    }
+
+    .thanks-text {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .top-bar {
+        padding: 12px 15px;
+    }
+
+    .back-button span {
+        display: none;
+    }
+
+    .page-title {
+        font-size: 18px;
+        margin-right: 20px;
+    }
+
+    .sponsors-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .card-header {
+        padding: 15px;
+    }
+
+    .thanks-section {
+        padding: 20px;
+    }
+
+    .thanks-title {
+        font-size: 24px;
+    }
+}
+
+/* 无数据提示 */
+.no-sponsors {
+    text-align: center;
+    padding: 50px 20px;
+    color: #888;
+    font-size: 18px;
+    grid-column: 1 / -1;
+}
