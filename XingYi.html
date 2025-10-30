@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> XingYi 博客</title>
+    <link rel="shortcut icon" href="./images/XingYi/icon.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" id="viewport" content="width=device-width, initial-scale=1">
+    <!--网页关键字-->
+    <meta name="keywords" content="分享技术,博客网站" />
+    <!--网页描述-->
+    <meta name="description" content="分享技术网站" />
+    <!--本页作者-->
+    <meta name="author" content="XingYi" />
+    <!--版权声明-->
+    <meta name="copyright" content="我们都是人,都是为了生存罢了. 否则必将追究法律责任." />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!--XingYiCSS-->
+    <link rel="stylesheet" type="text/css" href="./css/XingYi/XingYi.css" />
+</head>
+
+<body>
+    <!-- 加载布局 -->
+    <div id="loader">
+        <div class="loader-circle">
+            <div class="loader-circle-bg"></div>
+            <div class="loader-circle-progress"></div>
+        </div>
+        <div class="loader-title">XingYi</div>
+    </div>
+
+    <!-- 滚动进度条 -->
+    <div id="progress-container">
+        <div id="progress-bar"></div>
+    </div>
+
+    <!-- 顶部导航栏 -->
+    <header>
+        <div class="logo">XingYi</div>
+        <nav class="nav-links">
+            <a href="#welcome">首页</a>
+            <a href="#career">技术进度</a>
+            <a href="#apps">App产品</a>
+            <a href="#projects">开源项目</a>
+            <a href="#thanks">特别鸣谢</a>
+            <a href="#sponsors">公益赞助</a>
+        </nav>
+        <button class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <!-- 侧边栏菜单 -->
+    <div class="sidebar">
+        <nav class="sidebar-links">
+            <a href="#welcome">首页</a>
+            <a href="#career">技术进度</a>
+            <a href="#apps">App产品</a>
+            <a href="#projects">开源项目</a>
+            <a href="#thanks">特别鸣谢</a>
+            <a href="#sponsors">公益赞助</a>
+        </nav>
+    </div>
+
+    <!-- 欢迎区域 -->
+    <section id="welcome">
+        <div class="stars"></div>
+        <div class="welcome-content">
+            <h1>欢迎访问来到XingYi博客</h1>
+            <p>探索网络新技术，共享开源与帮助.</p>
+        </div>
+        <div class="time-display" id="current-time"></div>
+    </section>
+
+    <!-- 职业部分 -->
+    <section id="career" <h2 class="section-title">技术进度</h2>
+        <div class="career-grid" id="career-grid">
+            <!-- 职业项目将通过JS动态添加 -->
+        </div>
+        <button class="show-more-btn" id="show-more-career">展示更多</button>
+    </section>
+
+    <!-- APP产品轮播图 -->
+    <section id="apps">
+        <h2 class="section-title">App产品</h2>
+        <div class="apps-container">
+            <div class="app-slider" id="app-slider">
+                <!-- APP卡片将通过JS动态添加 -->
+            </div>
+            <div class="app-nav">
+                <div class="app-nav-btn" id="app-prev">
+                    <i class="fas fa-chevron-left"></i>
+                </div>
+                <div class="app-nav-btn" id="app-next">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 开源项目部分 -->
+    <section id="projects">
+        <h2 class="section-title">开源项目</h2>
+        <div class="projects-header">
+            <div class="search-container">
+                <input type="text" class="search-input" id="project-search" placeholder="搜索开源项目...">
+            </div>
+        </div>
+        <div class="projects-grid" id="projects-grid">
+            <!-- 开源项目将通过JS动态添加 -->
+        </div>
+        <button class="show-more-btn" id="show-more-projects">加载更多</button>
+    </section>
+
+    <!-- 感谢区 -->
+    <section id="thanks">
+        <h2 class="section-title">特别鸣谢</h2>
+        <div class="thanks-container">
+            <div class="thanks-slider" id="thanks-slider">
+                <!-- 感谢卡片将通过JS动态添加 -->
+            </div>
+            <div class="thanks-nav">
+                <div class="thanks-nav-btn" id="thanks-prev">
+                    <i class="fas fa-chevron-left"></i>
+                </div>
+                <div class="thanks-nav-btn" id="thanks-next">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 赞助布局区 -->
+    <section id="sponsors">
+        <h2 class="section-title">赞助支持</h2>
+        <div class="sponsors-container">
+            <!-- 赞助轮播图部分 -->
+            <div class="sponsors-slider-container">
+                <div class="sponsors-slider" id="sponsors-slider">
+                    <!-- 赞助卡片将通过JS动态添加 -->
+                </div>
+                <div class="sponsor-nav">
+                    <div class="sponsor-nav-btn" id="sponsor-prev">
+                        <i class="fas fa-chevron-left"></i>
+                    </div>
+                    <div class="sponsor-nav-btn" id="sponsor-next">
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 二维码卡片部分 -->
+            <div class="qr-card-container">
+                <div class="qr-card">
+                    <h3 class="qr-title">赞助支持</h3>
+                    <div class="qr-image">
+                        <img class="jzzc" src="./images/XingYi/jz/weixin.png" alt="赞助二维码">
+                    </div>
+                    <p class="qr-description">赞助时请备注下QQ号.<br>此为自愿公益赞助，请扫二维码赞助一下吧！<br> 你的赞助，会为本人家庭生活 与 贡献帮助、公益开源越来越大.</p>
+                    <div class="qr-payment-methods">
+                        <div class="payment-method">
+                            <i class="fab fa-weixin"></i>
+                        </div>
+                        <div class="payment-method">
+                            <i class="fab fa-alipay"></i>
+                        </div>
+                        <div class="payment-method">
+                            <i class="fab fa-jzlb">...</i>
+                        </div>
+                        <!-- <div class="payment-method">
+                                <i class="fab fa-paypal"></i>
+                            </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>关于XingYi</h3>
+                <p>在网络上寻找更多的技术，进行学习与互助、共享开源代码.</p>
+            </div>
+            <div class="footer-column">
+                <h3>联系方式</h3>
+                <div class="footer-links">
+                    <a href="mailto:3529506067@qq.com">邮箱: 3529506067@qq.com</a>
+                    <a href="https://qm.qq.com/q/oT230pboL8">QQ: 3529506067</a>
+                    <a href="https://github.com/ZFPYi">GitHub: XingYi</a>
+                    <a href="https://b23.tv/yToJeib">bilibili: XingYi_Hello</a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>推荐渠道</h3>
+                <div class="footer-links" id="footer-links">
+                    <!-- 快速链接将通过JS动态添加 -->
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p id="but"></p>
+        </div>
+    </footer>
+
+    <!--XingYiJS-->
+    <script src="./js/XingYi/index.js"></script>
+    <!--YiZYJS-->
+    <script src="./js/XingYi/YiZY.js"></script>
+    <!--appTiJS-->
+    <script src="./js/XingYi/appTi.js"></script>
+    <!--gkYiJS-->
+    <script src="./js/XingYi/gkYi.js"></script>
+    <!--gxYiJS-->
+    <script src="./js/XingYi/gxYi.js"></script>
+    <!--zcYiJS-->
+    <script src="./js/XingYi/zcYi.js"></script>
+    <!--urlYiJS-->
+    <script src="./js/XingYi/urlYi.js"></script>
+
+    <!--MCUi-->
+    <script src="./js/Zzi.js"></script>
+</body>
+
+</html>

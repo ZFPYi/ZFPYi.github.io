@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>  
+   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>赞助列表</title>
+    <link rel="shortcut icon" href="./images/jzlb/icon.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" id="viewport" content="width=device-width, initial-scale=1">
+    <!--网页关键字-->
+    <meta name="keywords" content="赞助列表" />
+    <!--网页描述-->
+    <meta name="description" content="分享技术" />
+    <!--本页作者-->
+    <meta name="author" content="XingYi" />
+    <!--版权声明-->
+    <meta name="copyright" content="我们都是人,都是为了生存罢了. 否则必将追究法律责任." />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!--jzlbCSS-->
+    <link rel="stylesheet" type="text/css" href="./css/jzlb/jzlb.css" />
+</head>
+<body>
+    <!-- 顶部导航栏 -->
+    <header class="top-bar">
+        <a href="./XingYi.html" class="back-button">
+            <i class="fas fa-arrow-left"></i>
+            <span>返回</span>
+        </a>
+        <h1 class="page-title">赞助列表</h1>
+    </header>
+
+    <!-- 感谢区域 -->
+    <div class="thanks-section">
+        <h2 class="thanks-title">衷心感谢所有赞助者</h2>
+        <p class="thanks-text">您的支持是我前进的动力！每一份赞助都将用于项目的持续发展和优化，感谢您的慷慨相助！<br>我们将继续努力，为您提供更优质的服务和体验.</p>
+    </div>
+
+    <!-- 赞助列表容器 -->
+    <main class="sponsors-container">
+        <div class="stats-bar">
+            <div class="stats-item">
+                <div class="stats-value" id="totalPeople">0</div>
+                <div class="stats-label">赞助人数</div>
+            </div>
+            <div class="stats-item">
+                <div class="stats-value" id="totalAmount">¥0</div>
+                <div class="stats-label">赞助总额</div>
+            </div>
+            <div class="stats-item">
+                <div class="stats-value" id="averageAmount">¥0</div>
+                <div class="stats-label">人均赞助</div>
+            </div>
+        </div>
+
+        <div class="sponsors-grid" id="sponsorsGrid">
+            <!-- 赞助卡片将通过JS动态生成 -->
+        </div>
+    </main>
+
+    <!--jzlbJS-->
+    <script src="./js/jzlb/jzlb.js"></script>
+    <!--indexJS-->
+    <script src="./js/jzlb/index.js"></script>
+</body>
+</html>
