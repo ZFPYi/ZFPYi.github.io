@@ -1,0 +1,330 @@
+ /* 设置body的样式 */
+ body,
+ html {
+     width: 100%;
+     height: 100%;
+     margin: 0;
+     padding: 0;
+     cursor: none;
+     /*设置鼠标空白*/
+     touch-action: none;
+     /* 禁用移动端触摸拖动 */
+
+     /*禁止复制text*/
+     -webkit-user-select: none;
+     /* Safari */
+     -moz-user-select: none;
+     /* Firefox */
+     -ms-user-select: none;
+     /* IE 10+ */
+     user-select: none;
+     /* 标准语法 */
+
+ }
+
+ /*设置a标签*/
+ a,
+ #sxi,
+ #qq :active,
+ hover,
+ visited,
+ link {
+     -webkit-tap-highlight-color: transparent;
+     /*处理a标签访问的动画问题*/
+     cursor: none;
+     /*设置鼠标空白*/
+     text-decoration: none;
+     /*a_*/
+ }
+
+ /*text._*/
+ .pl {
+     font-size: 20px;
+ }
+
+ /*居中部局区块_*/
+ #i404 {
+     width: -2px;
+     height: -2px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     position: absolute;
+     top: 40%;
+     right: 50%;
+     left: 50%;
+     bottom: 60%;
+     /* border: 1px solid #ccc;*/
+ }
+
+ #i404 div {
+     width: -2px;
+     height: -2px;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     /* border: 1px solid #ccc;*/
+ }
+
+ /*404img._*/
+ #img404 {
+     width: 55px;
+     height: 55px;
+     margin: 7px 0px;
+ }
+
+ /*Hello World!*/
+ #pl404 {
+     width: 150px;
+     text-align: center;
+     font-size: 25px;
+ }
+
+ #l404 {
+     width: -2px;
+     height: -2px;
+     display: flex;
+     flex-flow: row nowrap;
+     justify-content: flex-start;
+ }
+
+ .l404 {
+     width: -2px;
+     height: -2px;
+ }
+
+ #cb {
+     width: 2px;
+     height: 30px;
+     background: #FF99CC;
+     margin: 29px 0px;
+ }
+
+ /*刷新*/
+ #sxi {
+     width: 40px;
+     margin: 28px 5px;
+ }
+
+ #sxa {
+     color: #0099FF;
+ }
+
+ #sxa:link {
+     color: #0099FF;
+ }
+
+ /* Underline From Left */
+ #sxi {
+     display: inline-block;
+     vertical-align: middle;
+     -webkit-transform: perspective(1px) translateZ(0);
+     transform: perspective(1px) translateZ(0);
+     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+     position: relative;
+     overflow: hidden;
+ }
+
+ #sxi:before {
+     content: "";
+     position: absolute;
+     z-index: -1;
+     left: 0;
+     right: 100%;
+     bottom: 0;
+     background: #000000;
+     height: 2px;
+     -webkit-transition-property: right;
+     transition-property: right;
+     -webkit-transition-duration: 0.3s;
+     transition-duration: 0.3s;
+     -webkit-transition-timing-function: ease-out;
+     transition-timing-function: ease-out;
+ }
+
+ #sxi:hover:before,
+ #sxi:focus:before,
+ #sxi:active:before {
+     right: 0;
+ }
+
+ /* Grow Shadow */
+ #sxi {
+     display: inline-block;
+     vertical-align: middle;
+     -webkit-transform: perspective(1px) translateZ(0);
+     transform: perspective(1px) translateZ(0);
+     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+     -webkit-transition-duration: 0.3s;
+     transition-duration: 0.3s;
+     -webkit-transition-property: box-shadow, transform;
+     transition-property: box-shadow, transform;
+ }
+
+ #sxi:hover,
+ #sxi:focus,
+ #sxi:active {
+     box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+     -webkit-transform: scale(1.1);
+     transform: scale(1.1);
+ }
+
+ /*维护时间*/
+ #rei {
+     width: -2px;
+     height: 37px;
+     font-size: 25px;
+     border: 0px solid #0066FF;
+     border-bottom-width: 3px;
+ }
+
+ /*维护标题*/
+ #reil {
+     width: 315px;
+     height: 37px;
+     font-size: 20px;
+ }
+
+ /*设置底部*/
+ #dibu {
+     width: -1px;
+     height: 65px;
+     margin: 0px 10px;
+     background: #000000;
+     box-shadow: 0px 0px 0px #ffffff00;
+     border-top-left-radius: 10px;
+     border-top-right-radius: 10px;
+     border: 1px solid #ffffff00;
+     position: absolute;
+     right: 0px;
+     left: 0px;
+     bottom: 0px;
+     display: flex;
+     flex-flow: row nowrap;
+     justify-content: space-around;
+ }
+
+ .diu {
+     width: -2ps;
+     height: -2px;
+ }
+
+ .poi {
+     color: #ffffff;
+     margin: 20px 0px 0px 0px;
+     padding: 0px 0px 0px 5px;
+     border: 0px solid #0099FF;
+     border-left-width: 2px;
+ }
+
+ /**/
+ /*设备大于800px时*/
+ @media (min-width:800px) {
+     #i404 div {
+         width: -2px;
+         height: -2px;
+         display: flex;
+         flex-wrap: nowrap;
+     }
+
+     /*404img._*/
+     #img404 {
+         width: 75px;
+         height: 75px;
+         margin: 1px 0px;
+     }
+
+     /*维营时间*/
+     #rei {
+         margin: 25px 0px 0px 0px;
+         padding: 0px 0px;
+     }
+
+     /*维护标题*/
+     #reil {
+         width: -2px;
+         height: 37px;
+         font-size: 20px;
+     }
+
+     /*维护标题*/
+     #reil {
+         width: 215px;
+         height: 37px;
+         font-size: 20px;
+         position: absolute;
+         top: 25px;
+         bottom: 0px;
+         left: 35px;
+         right: 0px;
+     }
+ }
+
+ /*设备大于600px且小于800px时*/
+ @media (min-width:600px) and (max-width:1000px) {
+     #i404 div {
+         display: flex;
+         flex-wrap: nowrap;
+     }
+
+     /*404img._*/
+     #img404 {
+         width: 65px;
+         height: 65px;
+     }
+
+     /*维营时间*/
+     #rei {
+         margin: 25px 0px 0px 0px;
+         padding: 0px 0px;
+     }
+
+     /*维护标题*/
+     #reil {
+         width: 215px;
+         height: 37px;
+         font-size: 20px;
+         position: absolute;
+         top: 25px;
+         bottom: 0px;
+         left: 26px;
+         right: 0px;
+     }
+ }
+
+ /*设备小于600px时*/
+ @media (max-width: 600px) {
+
+     #i404 div {
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: center;
+     }
+
+     #l404 {
+         width: 100vh;
+     }
+
+     /*404img._*/
+     #img404 {
+         width: 65px;
+         height: 65px;
+     }
+
+     /*维营时间*/
+     #rei {
+         margin: -30px 0px 0px 0px;
+     }
+
+     /*维护标题*/
+     #reil {
+         width: 315px;
+         height: 37px;
+         font-size: 20px;
+         position: absolute;
+         top: 90px;
+         bottom: 0px;
+         left: -155px;
+         right: 0px;
+     }
+ }
